@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (5.4.4)
+  - DZNEmptyDataSet (1.8.1)
+  - Kingfisher (7.1.2)
+  - SVProgressHUD (2.2.5)
+  - ToastViewSwift (1.0.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4)
+  - DZNEmptyDataSet
+  - Kingfisher
+  - SVProgressHUD
+  - ToastViewSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DZNEmptyDataSet
+    - Kingfisher
+    - SVProgressHUD
+    - ToastViewSwift
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  ToastViewSwift: d63718326476fc0ad0120130b12ae3c8cbf80b3e
+
+PODFILE CHECKSUM: db20fe98cafb1f178268241b524e4d8c7b004a39
+
+COCOAPODS: 1.11.2

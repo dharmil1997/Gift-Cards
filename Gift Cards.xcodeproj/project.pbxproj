@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		797813DC27ACC5A40020D039 /* Pods_Gift_Cards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509D046912FAB5F13AB883BE /* Pods_Gift_Cards.framework */; };
+		799274D927ACBB9E00BB920E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799274D827ACBB9E00BB920E /* AppDelegate.swift */; };
+		799274DB27ACBB9E00BB920E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799274DA27ACBB9E00BB920E /* SceneDelegate.swift */; };
+		799274E227ACBBA000BB920E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799274E127ACBBA000BB920E /* Assets.xcassets */; };
+		799274E527ACBBA000BB920E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799274E327ACBBA000BB920E /* LaunchScreen.storyboard */; };
+		799274EE27ACBC1A00BB920E /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799274ED27ACBC1A00BB920E /* UIImageView+Extensions.swift */; };
+		799274F027ACBC4C00BB920E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799274EF27ACBC4C00BB920E /* UIViewController+Extensions.swift */; };
+		799274F227ACBC6700BB920E /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799274F127ACBC6700BB920E /* Int+Extensions.swift */; };
+		799274F527ACBC9D00BB920E /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799274F427ACBC9D00BB920E /* ApiProtocol.swift */; };
+		799274F727ACBCB200BB920E /* ApiRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799274F627ACBCB200BB920E /* ApiRepo.swift */; };
+		799274F927ACBCF600BB920E /* ApiRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799274F827ACBCF600BB920E /* ApiRequestType.swift */; };
+		799274FB27ACBD0F00BB920E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799274FA27ACBD0F00BB920E /* ApiService.swift */; };
+		799274FE27ACBD3A00BB920E /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799274FD27ACBD3A00BB920E /* CartManager.swift */; };
+		7992750327ACBD8300BB920E /* GiftCardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992750227ACBD8300BB920E /* GiftCardListCell.swift */; };
+		7992750527ACBDB200BB920E /* GiftCardListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992750427ACBDB200BB920E /* GiftCardListProtocols.swift */; };
+		7992750727ACBDD900BB920E /* GiftCardSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992750627ACBDD900BB920E /* GiftCardSceneConfigurator.swift */; };
+		7992750927ACBE0100BB920E /* GiftCardSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992750827ACBE0100BB920E /* GiftCardSceneInteractor.swift */; };
+		7992750B27ACBE1C00BB920E /* GiftCardScenePresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992750A27ACBE1C00BB920E /* GiftCardScenePresentor.swift */; };
+		7992750D27ACBE3800BB920E /* GiftCardSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992750C27ACBE3800BB920E /* GiftCardSceneRouter.swift */; };
+		7992750F27ACBE4C00BB920E /* GiftCardListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992750E27ACBE4C00BB920E /* GiftCardListVC.swift */; };
+		7992751227ACBE8F00BB920E /* GiftCardDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992751127ACBE8F00BB920E /* GiftCardDetailsProtocols.swift */; };
+		7992751427ACBEB100BB920E /* GiftCardDetailsSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992751327ACBEB100BB920E /* GiftCardDetailsSceneConfigurator.swift */; };
+		7992751627ACBECC00BB920E /* GiftCardDetailsSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992751527ACBECC00BB920E /* GiftCardDetailsSceneInteractor.swift */; };
+		7992751827ACBEF800BB920E /* GiftCardDetailsSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992751727ACBEF800BB920E /* GiftCardDetailsSceneRouter.swift */; };
+		7992751A27ACBF1000BB920E /* GiftCardDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992751927ACBF1000BB920E /* GiftCardDetailsVC.swift */; };
+		7992751E27ACBF7300BB920E /* GiftCardPurchasedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992751D27ACBF7300BB920E /* GiftCardPurchasedCell.swift */; };
+		7992752027ACBF9400BB920E /* GiftCardPurchasedProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992751F27ACBF9400BB920E /* GiftCardPurchasedProtocols.swift */; };
+		7992752227ACBFBC00BB920E /* GiftCardPurchasedSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992752127ACBFBC00BB920E /* GiftCardPurchasedSceneConfigurator.swift */; };
+		7992752427ACBFD000BB920E /* GiftCardPurchasedSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992752327ACBFD000BB920E /* GiftCardPurchasedSceneInteractor.swift */; };
+		7992752627ACBFEC00BB920E /* GiftCardPurchasedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992752527ACBFEC00BB920E /* GiftCardPurchasedVC.swift */; };
+		7992752A27ACC03100BB920E /* GiftCardCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992752927ACC03100BB920E /* GiftCardCartCell.swift */; };
+		7992752C27ACC05700BB920E /* GiftCardCartProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992752B27ACC05700BB920E /* GiftCardCartProtocols.swift */; };
+		7992752E27ACC07F00BB920E /* GiftCardCartSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992752D27ACC07F00BB920E /* GiftCardCartSceneConfigurator.swift */; };
+		7992753027ACC09700BB920E /* GiftCardCartSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992752F27ACC09700BB920E /* GiftCardCartSceneRouter.swift */; };
+		7992753227ACC0B300BB920E /* GiftCardCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7992753127ACC0B300BB920E /* GiftCardCartVC.swift */; };
+		79D6840327AFBA0D007C8F3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D6840227AFBA0D007C8F3A /* Constants.swift */; };
+		79D6840627AFBA44007C8F3A /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D6840527AFBA44007C8F3A /* BaseVC.swift */; };
+		79D6840E27AFBD49007C8F3A /* GiftCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D6840D27AFBD49007C8F3A /* GiftCardsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79D6840F27AFBD49007C8F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 799274CD27ACBB9E00BB920E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 799274D427ACBB9E00BB920E;
+			remoteInfo = "Gift Cards";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		509D046912FAB5F13AB883BE /* Pods_Gift_Cards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gift_Cards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		799274D527ACBB9E00BB920E /* Gift Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gift Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		799274D827ACBB9E00BB920E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		799274DA27ACBB9E00BB920E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		799274E127ACBBA000BB920E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		799274E427ACBBA000BB920E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		799274E627ACBBA000BB920E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799274ED27ACBC1A00BB920E /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		799274EF27ACBC4C00BB920E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		799274F127ACBC6700BB920E /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		799274F427ACBC9D00BB920E /* ApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
+		799274F627ACBCB200BB920E /* ApiRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRepo.swift; sourceTree = "<group>"; };
+		799274F827ACBCF600BB920E /* ApiRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestType.swift; sourceTree = "<group>"; };
+		799274FA27ACBD0F00BB920E /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		799274FD27ACBD3A00BB920E /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		7992750227ACBD8300BB920E /* GiftCardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardListCell.swift; sourceTree = "<group>"; };
+		7992750427ACBDB200BB920E /* GiftCardListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardListProtocols.swift; sourceTree = "<group>"; };
+		7992750627ACBDD900BB920E /* GiftCardSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardSceneConfigurator.swift; sourceTree = "<group>"; };
+		7992750827ACBE0100BB920E /* GiftCardSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardSceneInteractor.swift; sourceTree = "<group>"; };
+		7992750A27ACBE1C00BB920E /* GiftCardScenePresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardScenePresentor.swift; sourceTree = "<group>"; };
+		7992750C27ACBE3800BB920E /* GiftCardSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardSceneRouter.swift; sourceTree = "<group>"; };
+		7992750E27ACBE4C00BB920E /* GiftCardListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardListVC.swift; sourceTree = "<group>"; };
+		7992751127ACBE8F00BB920E /* GiftCardDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardDetailsProtocols.swift; sourceTree = "<group>"; };
+		7992751327ACBEB100BB920E /* GiftCardDetailsSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardDetailsSceneConfigurator.swift; sourceTree = "<group>"; };
+		7992751527ACBECC00BB920E /* GiftCardDetailsSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardDetailsSceneInteractor.swift; sourceTree = "<group>"; };
+		7992751727ACBEF800BB920E /* GiftCardDetailsSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardDetailsSceneRouter.swift; sourceTree = "<group>"; };
+		7992751927ACBF1000BB920E /* GiftCardDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardDetailsVC.swift; sourceTree = "<group>"; };
+		7992751D27ACBF7300BB920E /* GiftCardPurchasedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardPurchasedCell.swift; sourceTree = "<group>"; };
+		7992751F27ACBF9400BB920E /* GiftCardPurchasedProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardPurchasedProtocols.swift; sourceTree = "<group>"; };
+		7992752127ACBFBC00BB920E /* GiftCardPurchasedSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardPurchasedSceneConfigurator.swift; sourceTree = "<group>"; };
+		7992752327ACBFD000BB920E /* GiftCardPurchasedSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardPurchasedSceneInteractor.swift; sourceTree = "<group>"; };
+		7992752527ACBFEC00BB920E /* GiftCardPurchasedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardPurchasedVC.swift; sourceTree = "<group>"; };
+		7992752927ACC03100BB920E /* GiftCardCartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardCartCell.swift; sourceTree = "<group>"; };
+		7992752B27ACC05700BB920E /* GiftCardCartProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardCartProtocols.swift; sourceTree = "<group>"; };
+		7992752D27ACC07F00BB920E /* GiftCardCartSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardCartSceneConfigurator.swift; sourceTree = "<group>"; };
+		7992752F27ACC09700BB920E /* GiftCardCartSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardCartSceneRouter.swift; sourceTree = "<group>"; };
+		7992753127ACC0B300BB920E /* GiftCardCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardCartVC.swift; sourceTree = "<group>"; };
+		79D6840227AFBA0D007C8F3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		79D6840527AFBA44007C8F3A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		79D6840B27AFBD49007C8F3A /* GiftCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiftCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D6840D27AFBD49007C8F3A /* GiftCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardsTests.swift; sourceTree = "<group>"; };
+		94D864B4BFD5A6C75D278656 /* Pods-Gift Cards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gift Cards.debug.xcconfig"; path = "Target Support Files/Pods-Gift Cards/Pods-Gift Cards.debug.xcconfig"; sourceTree = "<group>"; };
+		D5881C2D3AF2E71746E37A7B /* Pods-Gift Cards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gift Cards.release.xcconfig"; path = "Target Support Files/Pods-Gift Cards/Pods-Gift Cards.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		799274D227ACBB9E00BB920E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797813DC27ACC5A40020D039 /* Pods_Gift_Cards.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D6840827AFBD49007C8F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		267BD02DFF44D75548C8D625 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94D864B4BFD5A6C75D278656 /* Pods-Gift Cards.debug.xcconfig */,
+				D5881C2D3AF2E71746E37A7B /* Pods-Gift Cards.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		540BD1AACAEC8B76A1FF624D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				509D046912FAB5F13AB883BE /* Pods_Gift_Cards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		799274CC27ACBB9E00BB920E = {
+			isa = PBXGroup;
+			children = (
+				799274D727ACBB9E00BB920E /* Gift Cards */,
+				79D6840C27AFBD49007C8F3A /* GiftCardsTests */,
+				799274D627ACBB9E00BB920E /* Products */,
+				267BD02DFF44D75548C8D625 /* Pods */,
+				540BD1AACAEC8B76A1FF624D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		799274D627ACBB9E00BB920E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				799274D527ACBB9E00BB920E /* Gift Cards.app */,
+				79D6840B27AFBD49007C8F3A /* GiftCardsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		799274D727ACBB9E00BB920E /* Gift Cards */ = {
+			isa = PBXGroup;
+			children = (
+				799274FF27ACBD5300BB920E /* Modules */,
+				799274FC27ACBD2800BB920E /* Shared */,
+				799274F327ACBC7C00BB920E /* Network */,
+				799274EC27ACBBF100BB920E /* Extensions */,
+				799274D827ACBB9E00BB920E /* AppDelegate.swift */,
+				799274DA27ACBB9E00BB920E /* SceneDelegate.swift */,
+				799274E127ACBBA000BB920E /* Assets.xcassets */,
+				799274E327ACBBA000BB920E /* LaunchScreen.storyboard */,
+				799274E627ACBBA000BB920E /* Info.plist */,
+			);
+			path = "Gift Cards";
+			sourceTree = "<group>";
+		};
+		799274EC27ACBBF100BB920E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				799274ED27ACBC1A00BB920E /* UIImageView+Extensions.swift */,
+				799274EF27ACBC4C00BB920E /* UIViewController+Extensions.swift */,
+				799274F127ACBC6700BB920E /* Int+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		799274F327ACBC7C00BB920E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				799274F427ACBC9D00BB920E /* ApiProtocol.swift */,
+				799274F627ACBCB200BB920E /* ApiRepo.swift */,
+				799274F827ACBCF600BB920E /* ApiRequestType.swift */,
+				799274FA27ACBD0F00BB920E /* ApiService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		799274FC27ACBD2800BB920E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				799274FD27ACBD3A00BB920E /* CartManager.swift */,
+				79D6840227AFBA0D007C8F3A /* Constants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		799274FF27ACBD5300BB920E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7992752727ACC00D00BB920E /* GiftCardCart */,
+				7992751B27ACBF3E00BB920E /* GiftCardPurchased */,
+				7992751027ACBE6E00BB920E /* GiftCardDetails */,
+				7992750027ACBD6200BB920E /* GiftCardList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7992750027ACBD6200BB920E /* GiftCardList */ = {
+			isa = PBXGroup;
+			children = (
+				79D6840427AFBA33007C8F3A /* Base */,
+				7992750127ACBD7000BB920E /* Cell */,
+				7992750427ACBDB200BB920E /* GiftCardListProtocols.swift */,
+				7992750627ACBDD900BB920E /* GiftCardSceneConfigurator.swift */,
+				7992750827ACBE0100BB920E /* GiftCardSceneInteractor.swift */,
+				7992750A27ACBE1C00BB920E /* GiftCardScenePresentor.swift */,
+				7992750C27ACBE3800BB920E /* GiftCardSceneRouter.swift */,
+				7992750E27ACBE4C00BB920E /* GiftCardListVC.swift */,
+			);
+			path = GiftCardList;
+			sourceTree = "<group>";
+		};
+		7992750127ACBD7000BB920E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7992750227ACBD8300BB920E /* GiftCardListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7992751027ACBE6E00BB920E /* GiftCardDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7992751127ACBE8F00BB920E /* GiftCardDetailsProtocols.swift */,
+				7992751327ACBEB100BB920E /* GiftCardDetailsSceneConfigurator.swift */,
+				7992751527ACBECC00BB920E /* GiftCardDetailsSceneInteractor.swift */,
+				7992751727ACBEF800BB920E /* GiftCardDetailsSceneRouter.swift */,
+				7992751927ACBF1000BB920E /* GiftCardDetailsVC.swift */,
+			);
+			path = GiftCardDetails;
+			sourceTree = "<group>";
+		};
+		7992751B27ACBF3E00BB920E /* GiftCardPurchased */ = {
+			isa = PBXGroup;
+			children = (
+				7992751C27ACBF5800BB920E /* Cell */,
+				7992751F27ACBF9400BB920E /* GiftCardPurchasedProtocols.swift */,
+				7992752127ACBFBC00BB920E /* GiftCardPurchasedSceneConfigurator.swift */,
+				7992752327ACBFD000BB920E /* GiftCardPurchasedSceneInteractor.swift */,
+				7992752527ACBFEC00BB920E /* GiftCardPurchasedVC.swift */,
+			);
+			path = GiftCardPurchased;
+			sourceTree = "<group>";
+		};
+		7992751C27ACBF5800BB920E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7992751D27ACBF7300BB920E /* GiftCardPurchasedCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7992752727ACC00D00BB920E /* GiftCardCart */ = {
+			isa = PBXGroup;
+			children = (
+				7992752827ACC01E00BB920E /* Cell */,
+				7992752B27ACC05700BB920E /* GiftCardCartProtocols.swift */,
+				7992752D27ACC07F00BB920E /* GiftCardCartSceneConfigurator.swift */,
+				7992752F27ACC09700BB920E /* GiftCardCartSceneRouter.swift */,
+				7992753127ACC0B300BB920E /* GiftCardCartVC.swift */,
+			);
+			path = GiftCardCart;
+			sourceTree = "<group>";
+		};
+		7992752827ACC01E00BB920E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7992752927ACC03100BB920E /* GiftCardCartCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		79D6840427AFBA33007C8F3A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				79D6840527AFBA44007C8F3A /* BaseVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		79D6840C27AFBD49007C8F3A /* GiftCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				79D6840D27AFBD49007C8F3A /* GiftCardsTests.swift */,
+			);
+			path = GiftCardsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		799274D427ACBB9E00BB920E /* Gift Cards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 799274E927ACBBA000BB920E /* Build configuration list for PBXNativeTarget "Gift Cards" */;
+			buildPhases = (
+				68BCAB477A14392EC568AC80 /* [CP] Check Pods Manifest.lock */,
+				799274D127ACBB9E00BB920E /* Sources */,
+				799274D227ACBB9E00BB920E /* Frameworks */,
+				799274D327ACBB9E00BB920E /* Resources */,
+				1CC77701265C66A8CD449EE0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gift Cards";
+			productName = "Gift Cards";
+			productReference = 799274D527ACBB9E00BB920E /* Gift Cards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79D6840A27AFBD49007C8F3A /* GiftCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79D6841127AFBD49007C8F3A /* Build configuration list for PBXNativeTarget "GiftCardsTests" */;
+			buildPhases = (
+				79D6840727AFBD49007C8F3A /* Sources */,
+				79D6840827AFBD49007C8F3A /* Frameworks */,
+				79D6840927AFBD49007C8F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79D6841027AFBD49007C8F3A /* PBXTargetDependency */,
+			);
+			name = GiftCardsTests;
+			productName = GiftCardsTests;
+			productReference = 79D6840B27AFBD49007C8F3A /* GiftCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		799274CD27ACBB9E00BB920E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					799274D427ACBB9E00BB920E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					79D6840A27AFBD49007C8F3A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 799274D427ACBB9E00BB920E;
+					};
+				};
+			};
+			buildConfigurationList = 799274D027ACBB9E00BB920E /* Build configuration list for PBXProject "Gift Cards" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 799274CC27ACBB9E00BB920E;
+			productRefGroup = 799274D627ACBB9E00BB920E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				799274D427ACBB9E00BB920E /* Gift Cards */,
+				79D6840A27AFBD49007C8F3A /* GiftCardsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		799274D327ACBB9E00BB920E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799274E527ACBBA000BB920E /* LaunchScreen.storyboard in Resources */,
+				799274E227ACBBA000BB920E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D6840927AFBD49007C8F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CC77701265C66A8CD449EE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gift Cards/Pods-Gift Cards-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gift Cards/Pods-Gift Cards-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gift Cards/Pods-Gift Cards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68BCAB477A14392EC568AC80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gift Cards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		799274D127ACBB9E00BB920E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799274F727ACBCB200BB920E /* ApiRepo.swift in Sources */,
+				79D6840627AFBA44007C8F3A /* BaseVC.swift in Sources */,
+				7992750527ACBDB200BB920E /* GiftCardListProtocols.swift in Sources */,
+				7992750327ACBD8300BB920E /* GiftCardListCell.swift in Sources */,
+				799274F927ACBCF600BB920E /* ApiRequestType.swift in Sources */,
+				7992750D27ACBE3800BB920E /* GiftCardSceneRouter.swift in Sources */,
+				7992751A27ACBF1000BB920E /* GiftCardDetailsVC.swift in Sources */,
+				7992750727ACBDD900BB920E /* GiftCardSceneConfigurator.swift in Sources */,
+				7992752627ACBFEC00BB920E /* GiftCardPurchasedVC.swift in Sources */,
+				799274FE27ACBD3A00BB920E /* CartManager.swift in Sources */,
+				799274D927ACBB9E00BB920E /* AppDelegate.swift in Sources */,
+				799274F527ACBC9D00BB920E /* ApiProtocol.swift in Sources */,
+				7992750927ACBE0100BB920E /* GiftCardSceneInteractor.swift in Sources */,
+				7992751627ACBECC00BB920E /* GiftCardDetailsSceneInteractor.swift in Sources */,
+				7992752E27ACC07F00BB920E /* GiftCardCartSceneConfigurator.swift in Sources */,
+				799274F027ACBC4C00BB920E /* UIViewController+Extensions.swift in Sources */,
+				7992752027ACBF9400BB920E /* GiftCardPurchasedProtocols.swift in Sources */,
+				7992750F27ACBE4C00BB920E /* GiftCardListVC.swift in Sources */,
+				7992752427ACBFD000BB920E /* GiftCardPurchasedSceneInteractor.swift in Sources */,
+				7992750B27ACBE1C00BB920E /* GiftCardScenePresentor.swift in Sources */,
+				7992752C27ACC05700BB920E /* GiftCardCartProtocols.swift in Sources */,
+				7992753027ACC09700BB920E /* GiftCardCartSceneRouter.swift in Sources */,
+				799274FB27ACBD0F00BB920E /* ApiService.swift in Sources */,
+				7992751E27ACBF7300BB920E /* GiftCardPurchasedCell.swift in Sources */,
+				79D6840327AFBA0D007C8F3A /* Constants.swift in Sources */,
+				7992753227ACC0B300BB920E /* GiftCardCartVC.swift in Sources */,
+				7992752227ACBFBC00BB920E /* GiftCardPurchasedSceneConfigurator.swift in Sources */,
+				799274F227ACBC6700BB920E /* Int+Extensions.swift in Sources */,
+				7992752A27ACC03100BB920E /* GiftCardCartCell.swift in Sources */,
+				7992751427ACBEB100BB920E /* GiftCardDetailsSceneConfigurator.swift in Sources */,
+				799274EE27ACBC1A00BB920E /* UIImageView+Extensions.swift in Sources */,
+				799274DB27ACBB9E00BB920E /* SceneDelegate.swift in Sources */,
+				7992751827ACBEF800BB920E /* GiftCardDetailsSceneRouter.swift in Sources */,
+				7992751227ACBE8F00BB920E /* GiftCardDetailsProtocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D6840727AFBD49007C8F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D6840E27AFBD49007C8F3A /* GiftCardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79D6841027AFBD49007C8F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 799274D427ACBB9E00BB920E /* Gift Cards */;
+			targetProxy = 79D6840F27AFBD49007C8F3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		799274E327ACBBA000BB920E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				799274E427ACBBA000BB920E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		799274E727ACBBA000BB920E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		799274E827ACBBA000BB920E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		799274EA27ACBBA000BB920E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D864B4BFD5A6C75D278656 /* Pods-Gift Cards.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z7T9BXGBRN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gift Cards/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gift Cards";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dharmil.raval.zip.Gift-Cards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		799274EB27ACBBA000BB920E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5881C2D3AF2E71746E37A7B /* Pods-Gift Cards.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z7T9BXGBRN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gift Cards/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gift Cards";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dharmil.raval.zip.Gift-Cards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79D6841227AFBD49007C8F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z7T9BXGBRN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dharmil.raval.zip.GiftCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gift Cards.app/Gift Cards";
+			};
+			name = Debug;
+		};
+		79D6841327AFBD49007C8F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z7T9BXGBRN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dharmil.raval.zip.GiftCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gift Cards.app/Gift Cards";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		799274D027ACBB9E00BB920E /* Build configuration list for PBXProject "Gift Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799274E727ACBBA000BB920E /* Debug */,
+				799274E827ACBBA000BB920E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		799274E927ACBBA000BB920E /* Build configuration list for PBXNativeTarget "Gift Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799274EA27ACBBA000BB920E /* Debug */,
+				799274EB27ACBBA000BB920E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79D6841127AFBD49007C8F3A /* Build configuration list for PBXNativeTarget "GiftCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D6841227AFBD49007C8F3A /* Debug */,
+				79D6841327AFBD49007C8F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 799274CD27ACBB9E00BB920E /* Project object */;
+}
